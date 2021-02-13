@@ -1,0 +1,4 @@
+'This Code Developed by Chris Vann
+'Just copy it into a separate module, then call it from 
+'anywhere in your program as SortArray ArrayGoesHere
+Dim Temp as Variant, X as Integer

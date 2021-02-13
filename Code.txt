@@ -1,0 +1,14 @@
+Public Function SortArray(ByRef TheArray As Variant)
+Sorted = False
+Do While Not Sorted
+    Sorted = True
+For X = 0 To UBound(TheArray) - 1
+    If TheArray(X) > TheArray(X + 1) Then
+        Temp = TheArray(X + 1)
+        TheArray(X + 1) = TheArray(X)
+        TheArray(X) = Temp
+        Sorted = False
+    End If
+Next X
+Loop
+End Function
